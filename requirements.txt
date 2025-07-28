@@ -1,0 +1,22 @@
+# GoFlask Runtime Requirements
+
+# Core dependencies - kept minimal for better compatibility
+typing-extensions>=4.0.0; python_version<"3.10"
+
+# Optional dependencies for enhanced features
+# These are not required for basic GoFlask functionality
+
+# For CLI support (optional)
+click>=8.0.0; extra == "cli"
+
+# For development server (optional) 
+werkzeug>=2.0.0; extra == "dev"
+
+# For Redis rate limiting (optional)
+redis>=4.0.0; extra == "redis"
+
+# For production logging (optional)
+structlog>=22.0.0; extra == "logging"
+
+# For advanced JSON handling (optional)
+orjson>=3.8.0; extra == "fast-json"
